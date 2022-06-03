@@ -1,0 +1,494 @@
+*{
+
+  padding: 0;
+
+  margin: 0;
+
+  box-sizing: border-box;
+
+  list-style: none;
+
+  font-family: 'Nunito', sans-serif;
+
+}
+
+body{
+
+  background-color: #000;
+
+}
+
+
+
+.main-content{
+
+  min-height: 100vh;
+
+  width: 80%;
+
+  margin: 2rem auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
+
+}
+
+
+
+.left-section{
+
+  grid-column: span 2;
+
+  height: 100%;
+
+  background-color: #062852;
+
+}
+
+.right-section{
+
+  grid-column: span 5;
+
+  background-color: #f7f7f7;
+
+  height: 100%;
+
+}
+
+
+
+
+
+.left-content{
+
+  padding: 2rem 3rem;
+
+}
+
+.profile{
+
+  width: 100%;
+
+  border-bottom: 1px solid #002333;
+
+}
+
+
+
+.image{
+
+  width: 100%;
+
+  text-align: center;
+
+}
+
+.profile img{
+
+  width: 100%;
+
+  border-radius: 50%;
+
+  border: 8px solid #002333;
+
+  
+
+}
+
+
+
+.name{
+
+  font-size: 2rem;
+
+  color: white;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  padding: 1.2rem 0;
+
+}
+
+
+
+.career{
+
+  font-size: 1.2rem;
+
+  color: white;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  padding-bottom: 1rem;
+
+}
+
+
+
+.main-title{
+
+  font-size: 1.8rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  color: #f7f7f7ec;
+
+  padding-top: 3rem;
+
+}
+
+
+
+.contact-info ul{
+
+  padding-top: 2rem;
+
+}
+
+
+
+.contact-info ul li{
+
+  padding: .4rem 0;
+
+  display: flex;
+
+  align-items: center;
+
+  color: #718096;
+
+}
+
+.contact-info ul li i{
+
+  padding-right: 1rem;
+
+  font-size: 1.2rem;
+
+  color: #fbb03b;
+
+}
+
+
+
+.skills-section ul{
+
+  padding-top: 2rem;
+
+}
+
+.skills-section ul li{
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  padding: .4rem 0;
+
+}
+
+
+
+.progress-bar{
+
+  width: 100%;
+
+  height: .4rem;
+
+  background-color: #2f81ed5b;
+
+  position: relative;
+
+  border-radius: 12px;
+
+}
+
+.progress{
+
+  height: 100%;
+
+  position: absolute;
+
+  left: 0;
+
+  background-color:#fbb03b;
+
+  border-radius: 12px;
+
+}
+
+.eng{
+
+  width: 100%;
+
+}
+
+.spa{
+
+  width: 80%;
+
+}
+
+.germ{
+
+  width: 75%;
+
+}
+
+.fra{
+
+  width: 80%;
+
+}
+
+.skill-title{
+
+  text-transform: uppercase;
+
+  color: #f7f7f7;
+
+  font-size: 1rem;
+
+}
+
+
+
+.sub-title{
+
+  padding-top: 2rem;
+
+  font-size: 1.2rem;
+
+  text-transform: uppercase;
+
+  color: #f7f7f7;
+
+}
+
+
+
+.sub-para{
+
+  color: #ccc;
+
+  padding: .4rem 0;
+
+}
+
+.right-main-content{
+
+  padding: 2rem 3rem;
+
+}
+
+.para{
+
+  line-height: 1.6rem;
+
+  color: #718096;
+
+  font-size: 1.1rem;
+
+}
+
+
+
+table { 
+
+	width: 700px; 
+
+	border-collapse: collapse; 
+
+	margin:50px auto;
+
+	}
+
+
+
+/* Zebra striping for the rows in the table */
+
+tr:nth-of-type(odd) { 
+
+	background: #eee; 
+
+	}
+
+
+
+th { 
+
+	background: #062852; 
+
+	color: #fbb03b; 
+
+	font-weight: bold; 
+
+	}
+
+
+
+td, th { 
+
+	padding: 10px; 
+
+	border: 1px solid #ccc; 
+
+	text-align: left; 
+
+	font-size: 18px;
+
+	}
+
+
+
+/* 
+
+Max width before this PARTICULAR table gets nasty
+
+This query will take effect for any screen smaller than 760px
+
+and also iPads specifically.
+
+*/
+
+@media 
+
+only screen and (max-width: 760px),
+
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+
+
+	table { 
+
+	  	width: 100%; 
+
+	}
+
+
+
+	/* Force table to not be like tables anymore */
+
+	table, thead, tbody, th, td, tr { 
+
+		display: block; 
+
+	}
+
+	
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+
+	thead tr { 
+
+		position: absolute;
+
+		top: -9999px;
+
+		left: -9999px;
+
+	}
+
+	
+
+	tr { border: 1px solid #ccc; }
+
+	
+
+	td { 
+
+		/* Behave  like a "row" */
+
+		border: none;
+
+		border-bottom: 1px solid #eee; 
+
+		position: relative;
+
+		padding-left: 50%; 
+
+	}
+
+
+
+	td:before { 
+
+		/* Now like a table header */
+
+		position: absolute;
+
+		/* Top/left values mimic padding */
+
+		top: 6px;
+
+		left: 6px;
+
+		width: 45%; 
+
+		padding-right: 10px; 
+
+		white-space: nowrap;
+
+		/* Label the data */
+
+		content: attr(data-column);
+
+
+
+		color: #000;
+
+		font-weight: bold;
+
+	}
+
+
+
+}
+
+
+
+.heading{
+
+background-color:#fbb03b;
+
+ padding:10px;
+
+color:#062852;
+
+text-align: left;
+
+padding-left: 50px;
+
+margin-right:-50px;
+
+margin-left:-48px
+
+}
+
+.personal{
+
+background-color:#062852;
+
+padding:10px;
+
+text-align: left;
+
+padding-left: 30px;
+
+margin-right:-8px;
+
+margin-left:20px 
+
+}
+
